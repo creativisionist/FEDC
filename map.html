@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Map Page</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="stylesheets/map.css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400, 700|Lora: 400,400italic,700,700italic" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+          <li><span class="navleft"><a href="./map.html">EXAMPLE</a></span></li>
+          <li><span class="navright"><a href="./index.html">HOME PAGE</a></span></li>
+        </ul>
+      </nav>
+      <div class="section-left">
+        <h3>CHICAGO, IL</h3>
+          <h4>
+            BELGIAN FRIES IN THE FRENCH MARKET |
+              <a href="http://www.frenchmarketchicago.com/vendor/frietkoten" target="blank">FRIETKOTEN BELGIAN FRIES & BEER</a> |
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+              | JUNE 16, 2015 03:26
+          </h4>
+          <p>Frietkoten Belgian Fries & Beer is über tasty.</p>
+          <h5>LISTENING TO BOY OF THE STARS - GLINT</h5>
+        <hr>
+          <h4>CHIC ATMOSPHERE + EXCELLENT COCKTAILS | 
+            <a href="http://promontorychicago.com/" target="blank">THE PROMONTORY</a>
+            | MAY 31, 2015 16:59
+          </h4>
+          <p>The Promontory in Hyde Park is a suave venue fulfilling an in-demand niche in an area that otherwise has no options for upscale nights out. The atmosphere is dark and cozy, with a hearth and open-kitchen that makes for a modern environment. The cocktails are fantastic (of particular note is the mixed drink comprising of homemade cream soda and banana rum), and the food is good though somewhat overpriced with limited portion sizes. Overall the venue is a great addition to the neighborhood, which includes a large space on the second floor for live music performances and the monthly salsa night.</p>
+          <h5>LISTENING TO SUMMER I - MAX RICHTER</h5>
+      </div>
+
+      <div class="section-right">
+        <div id="map">
+        </div>
+        <script>
+          function initMap() {
+            var myLatLng = {lat: 41.8337329, lng: -87.7321555};
+
+            var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 5,
+              center: myLatLng
+            });
+
+            var marker = new google.maps.Marker({
+              position: myLatLng,
+              map: map,
+              title: 'Chicago'
+            });
+
+            var styles = [
+              {
+                stylers: [
+                  { hue: "#052843" },
+                  { saturation: -20 }
+                ]
+              },{
+                featureType: "road",
+                elementType: "geometry",
+                stylers: [
+                  { lightness: 100 },
+                  { visibility: "simplified" }
+                ]
+              },{
+                featureType: "road",
+                elementType: "labels",
+                stylers: [
+                  { visibility: "off" }
+                ]
+              },{
+                featureType: "water",
+                elementType: "geometry.fill",
+                stylers: [
+                  { color: "#052843" },
+                ]
+              },{
+                featureType: "landscape.natural",
+                elementType: "all",
+                stylers: [
+                  { color: "#FCEFC6" },
+                ]
+              },
+            ];
+            map.setOptions({styles: styles});
+          }
+      </script>
+      <script async defer
+          src="https://maps.googleapis.com/maps/api/js?signed_in=false&callback=initMap"></script>
+
+        <div class="trips">
+          <ul>
+            <h4>PAST TRIPS</h4>
+            <li>MARCH 12, 2014 - JUNE 13, 2015</li>
+            <li>FEBRUARY 27, 2014 - MARCH 3, 2014</li>
+            <li>JANUARY 24, 2014 - JANUARY 27, 2014</li>
+            <li>JANUARY 4, 2014 - JANUARY 7, 2014</li>
+            <li>NOVEMBER 3, 2013 - NOVEMBER 6, 2013</li>
+            <li>OCTOBER 22, 2013 - OCTOBER 28, 2013</li>
+            <li>SEPTEMBER 19, 2013 - SEPTEMBER 30, 2013</li>
+            <li>SEPTEMBER 19, 2012 - JULY 2, 2013</li>
+            <li>SEPTEMBER 19, 2011 - JUNE 8, 2012</li>
+            <li>JUNE 5, 2011</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

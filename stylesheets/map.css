@@ -1,0 +1,105 @@
+/*
+  Black: #020202;
+  Light Grey: #d3d3d3;
+  Grey Blue: #70abba;
+*/
+
+/*general*/
+h3 {
+  font-family: 'Montserrat';
+  font-size: 2.1em;
+  font-weight: 700;
+}
+
+h4 {
+  font-family: 'Montserrat';
+  font-weight: 700;
+}
+
+h5 {
+  font-family: 'Montserrat';
+  font-size: .7em;
+}
+
+p {
+  font-family: 'Lora';
+  font-size: .85em;
+  text-align: justify;
+}
+
+/*container*/
+.container {
+  padding-left: 7em;
+  padding-right: 7em;
+}
+
+/*navbar*/
+nav {
+  margin: auto;
+  width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+  overflow: hidden;
+  padding: 0;
+}
+
+nav ul li {
+  list-style-type: none;
+  float: left;
+  width: calc(100% / 2);
+}
+
+.navleft {
+  font-family: 'Montserrat';
+  font-size: 1.25em;
+  font-weight: 700;
+}
+
+.navright {
+  float: right;
+  padding-top: .3em;
+  padding-left: 25em;
+  font-family: 'Montserrat';
+}
+
+a:link, a:visited {
+  color: #020202;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #d3d3d3;
+  text-decoration: none;
+}
+
+.section-left {
+  float: left;
+  width: 50%;
+}
+
+.section-left a {
+  color: #70abba;
+}
+
+.section-right {
+  float: right;
+  width: 40%;
+}
+
+/*map*/
+#map {
+  width: 100%;
+  height: 18em;
+  background-color: #CCC;
+}
+
+/*trip list*/
+.trips > ul > li {
+  list-style-type: none;
+  font-family: 'Montserrat';
+  font-size: .9em;
+  font-weight: 700;
+  padding: .3em 0;
+}
