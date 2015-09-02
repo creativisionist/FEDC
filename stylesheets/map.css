@@ -30,13 +30,13 @@ p {
 
 /*container*/
 .container {
-  padding-left: 7.188em;
-  padding-right: 7.063em;
+  padding-left: 115px;
+  padding-right: 113px;
 }
 
 /*navbar*/
 nav {
-  margin: auto;
+  margin-top: 39px;
   width: 100%;
   font-family: 'Montserrat';
 }
