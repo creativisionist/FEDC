@@ -10,22 +10,37 @@ body {
 }
 
 h3 {
-  font-size: 2.1em;
+  font-size: 28px;
   font-weight: 700;
+  height: 0;
+  margin-bottom: 88px;
+  margin-top: 7px;
 }
 
 h4 {
+  font-size: 17.5px;
   font-weight: 700;
+  height: 0;
+  margin-bottom: 79px;
+  margin-top: 0;
 }
 
 h5 {
-  font-size: .7em;
+  font-size: 13.1px;
+  height: 0;
+  margin-top: 0;
+  padding-bottom: 37px;
 }
 
 p {
   font-family: 'Lora';
-  font-size: .85em;
-  text-align: justify;
+  font-size: 16px;
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+
+hr {
+  margin-bottom: 43.9px;
 }
 
 /*container*/
@@ -37,6 +52,7 @@ p {
 /*navbar*/
 nav {
   margin-top: 39px;
+  margin-bottom: 70px;
   width: 100%;
   font-family: 'Montserrat';
 }
@@ -53,14 +69,16 @@ nav ul li {
 }
 
 .navleft {
-  font-size: 1.25em;
+  font-size: 17px;
   font-weight: 700;
 }
 
 .navright {
   float: right;
-  padding-top: .3em;
-  padding-left: 25em;
+  font-size: 14.6px;
+  font-weight: 400;
+  padding-left: 400px;
+  padding-right: 18px;
 }
 
 a:link, a:visited {
@@ -74,7 +92,8 @@ a:hover {
 
 .section-left {
   float: left;
-  width: 50%;
+  margin-right: 86px;
+  width: 554px;
 }
 
 .section-left a {
@@ -83,21 +102,32 @@ a:hover {
 
 .section-right {
   float: right;
-  width: 40%;
+  margin-right: 0;
+  width: 500px;
 }
 
 /*map*/
 #map {
-  width: 100%;
-  height: 18em;
+  width: 502px;
+  height: 302px;
   background-color: #CCC;
 }
 
 /*trip list*/
+.trip-title {
+  height: 17.5px;
+  font-size: 17.5px;
+  font-weight: 700;
+  margin-top: 43px;
+  margin-bottom: 41px;
+}
+
 .trips > ul > li {
   list-style-type: none;
   font-family: 'Montserrat';
-  font-size: .9em;
+  font-size: 14.4px;
   font-weight: 700;
-  padding: .3em 0;
+  line-height: 12px;
+  margin-bottom: 19px;
+  padding-left: 44px 0;
 }
