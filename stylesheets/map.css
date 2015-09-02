@@ -5,19 +5,20 @@
 */
 
 /*general*/
-h3 {
+body {
   font-family: 'Montserrat';
+}
+
+h3 {
   font-size: 2.1em;
   font-weight: 700;
 }
 
 h4 {
-  font-family: 'Montserrat';
   font-weight: 700;
 }
 
 h5 {
-  font-family: 'Montserrat';
   font-size: .7em;
 }
 
@@ -37,6 +38,7 @@ p {
 nav {
   margin: auto;
   width: 100%;
+  font-family: 'Montserrat';
 }
 
 nav ul {
@@ -46,13 +48,11 @@ nav ul {
 }
 
 nav ul li {
-  list-style-type: none;
   float: left;
   width: calc(100% / 2);
 }
 
 .navleft {
-  font-family: 'Montserrat';
   font-size: 1.25em;
   font-weight: 700;
 }
@@ -61,7 +61,6 @@ nav ul li {
   float: right;
   padding-top: .3em;
   padding-left: 25em;
-  font-family: 'Montserrat';
 }
 
 a:link, a:visited {
@@ -71,7 +70,6 @@ a:link, a:visited {
 
 a:hover {
   color: #d3d3d3;
-  text-decoration: none;
 }
 
 .section-left {
