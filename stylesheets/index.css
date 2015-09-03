@@ -14,12 +14,13 @@ html {
 /*container*/
 .container {
   padding-left: 115px;
-  padding-right: 113px;
+  padding-right: 130px;
 }
 
 /*navbar*/
 nav {
   margin-top: 39px;
+  margin-bottom: 70px;
   width: 100%;
   font-family: 'Montserrat';
 }
@@ -36,14 +37,16 @@ nav ul li {
 }
 
 .navleft {
-  font-size: 1.25em;
+  font-size: 17px;
   font-weight: 700;
 }
 
 .navright {
   float: right;
-  padding-left: 25em;
-  padding-top: .3em;
+  font-size: 14.6px;
+  font-weight: 400;
+  padding-left: 400px;
+  padding-right: 18px;
 }
 
 a:link, a:visited {
@@ -58,39 +61,42 @@ a:hover {
 /*page text*/
 .text {
   color: #fff;
-  margin-top: 10em;
+  margin-top: 175.4px;
   text-align: center;
+  list-style-type: none;
 }
 
 .example li {
   display: inline-block;
   font-family: 'Montserrat';
-  font-size: 7em;
+  font-size: 95px;
   font-weight: 700;
-  list-style-type: none;
+  margin-bottom: 31.3px;
 }
 
 .letters li {
   display: inline-block;
   font-family: 'Lora';
-  font-size: 2.4em;
-  list-style-type: none;
-  margin-top: -.75em;
-  padding: .6em;
+  font-size: 32px;
+  height: 0;
+  margin-top: -16px;
+  padding-left: 16.5px;
+  padding-right: 16.5px;
 }
 
 .foreign li {
   display: inline-block;
   font-family: 'Lora';
-  font-size: 4em;
-  list-style-type: none;
-  margin-bottom: -.3em;
-  margin-top: -.75em;
-  padding: 20px;
+  font-size: 47.6px;
+  height: 0;
+  margin-top: 13.8px;
+  padding-left: 24.5px;
+  padding-right: 24.5px;
 }
 
 .live li {
+  display: inline-block;
   font-family: 'Lora';
-  font-size: 2.4em;
-  list-style-type: none;
+  font-size: 32px;
+  margin-top: 20.7px;
 }
